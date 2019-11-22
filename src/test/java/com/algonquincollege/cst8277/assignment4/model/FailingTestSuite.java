@@ -1,9 +1,10 @@
-package com.algonquincollege.cst8277.assignment3.model;
+package com.algonquincollege.cst8277.assignment4.model;
 
 import org.junit.Test;
-import static org.junit.Assert.fail;
 
-import com.algonquincollege.cst8277.assignment3.TestSuiteBase;
+import com.algonquincollege.cst8277.assignment4.TestSuiteBase;
+
+import static org.junit.Assert.fail;
 
 public class FailingTestSuite extends TestSuiteBase {
     

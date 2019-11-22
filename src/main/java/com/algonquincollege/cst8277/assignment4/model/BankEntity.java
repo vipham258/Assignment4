@@ -1,4 +1,4 @@
-package com.algonquincollege.cst8277.assignment3.model;
+package com.algonquincollege.cst8277.assignment4.model;
 
 /**
  * Description: BankEntity interface

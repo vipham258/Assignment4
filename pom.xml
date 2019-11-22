@@ -8,7 +8,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Assignment4</name>
-  <description>Assignment 3 - More JPA, More Power</description>
+  <description>Assignment 4 - Group Assignment</description>
 
     <!-- why is everything a property? Because hard-coded values become part of
         Maven's immutable Model object and then their contents can't be changed.

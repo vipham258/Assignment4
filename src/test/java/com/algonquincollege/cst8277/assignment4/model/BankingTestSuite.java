@@ -1,4 +1,4 @@
-package com.algonquincollege.cst8277.assignment3.model;
+package com.algonquincollege.cst8277.assignment4.model;
 
 import static org.hamcrest.core.StringStartsWith.startsWith;
 import static org.junit.Assert.assertEquals;
@@ -23,7 +23,14 @@ import org.junit.runners.MethodSorters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.algonquincollege.cst8277.assignment3.TestSuiteBase;
+import com.algonquincollege.cst8277.assignment4.TestSuiteBase;
+import com.algonquincollege.cst8277.assignment4.model.Asset;
+import com.algonquincollege.cst8277.assignment4.model.ChequingAccount;
+import com.algonquincollege.cst8277.assignment4.model.ChequingAccount_;
+import com.algonquincollege.cst8277.assignment4.model.InvestmentAccount;
+import com.algonquincollege.cst8277.assignment4.model.Portfolio;
+import com.algonquincollege.cst8277.assignment4.model.SavingAccount;
+import com.algonquincollege.cst8277.assignment4.model.User;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;

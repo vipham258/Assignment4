@@ -7,14 +7,14 @@
 	<persistence-unit name="Assignment3-main-PU"
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<class>com.algonquincollege.cst8277.assignment3.model.User</class>
-		<class>com.algonquincollege.cst8277.assignment3.model.Asset</class>
-		<class>com.algonquincollege.cst8277.assignment3.model.Portfolio</class>
-		<class>com.algonquincollege.cst8277.assignment3.model.ModelBase</class>
-		<class>com.algonquincollege.cst8277.assignment3.model.AccountBase</class>
-		<class>com.algonquincollege.cst8277.assignment3.model.ChequingAccount</class>
-		<class>com.algonquincollege.cst8277.assignment3.model.InvestmentAccount</class>
-		<class>com.algonquincollege.cst8277.assignment3.model.SavingAccount</class>
+		<class>com.algonquincollege.cst8277.assignment4.model.User</class>
+		<class>com.algonquincollege.cst8277.assignment4.model.Asset</class>
+		<class>com.algonquincollege.cst8277.assignment4.model.Portfolio</class>
+		<class>com.algonquincollege.cst8277.assignment4.model.ModelBase</class>
+		<class>com.algonquincollege.cst8277.assignment4.model.AccountBase</class>
+		<class>com.algonquincollege.cst8277.assignment4.model.ChequingAccount</class>
+		<class>com.algonquincollege.cst8277.assignment4.model.InvestmentAccount</class>
+		<class>com.algonquincollege.cst8277.assignment4.model.SavingAccount</class>
 
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>

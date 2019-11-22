@@ -7,7 +7,7 @@
  * 
  * Students must sub-class this class when building their TestSuite class
  */
-package com.algonquincollege.cst8277.assignment3;
+package com.algonquincollege.cst8277.assignment4;
 
 import java.lang.invoke.MethodHandles;
 import java.sql.SQLException;

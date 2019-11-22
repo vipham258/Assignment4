@@ -5,14 +5,14 @@
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="Assignment3-testing-PU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>com.algonquincollege.cst8277.assignment3.model.User</class>
-        <class>com.algonquincollege.cst8277.assignment3.model.Asset</class>
-        <class>com.algonquincollege.cst8277.assignment3.model.Portfolio</class>
-        <class>com.algonquincollege.cst8277.assignment3.model.ModelBase</class>
-        <class>com.algonquincollege.cst8277.assignment3.model.AccountBase</class>
-        <class>com.algonquincollege.cst8277.assignment3.model.ChequingAccount</class>
-        <class>com.algonquincollege.cst8277.assignment3.model.InvestmentAccount</class>
-        <class>com.algonquincollege.cst8277.assignment3.model.SavingAccount</class>
+        <class>com.algonquincollege.cst8277.assignment4.model.User</class>
+        <class>com.algonquincollege.cst8277.assignment4.model.Asset</class>
+        <class>com.algonquincollege.cst8277.assignment4.model.Portfolio</class>
+        <class>com.algonquincollege.cst8277.assignment4.model.ModelBase</class>
+        <class>com.algonquincollege.cst8277.assignment4.model.AccountBase</class>
+        <class>com.algonquincollege.cst8277.assignment4.model.ChequingAccount</class>
+        <class>com.algonquincollege.cst8277.assignment4.model.InvestmentAccount</class>
+        <class>com.algonquincollege.cst8277.assignment4.model.SavingAccount</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <!-- schema-generation based on @Annotation metadata from all the @Entity classes -->

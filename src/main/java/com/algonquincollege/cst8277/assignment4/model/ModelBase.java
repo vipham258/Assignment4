@@ -5,14 +5,14 @@
  *
  * @date 2019 10
  */
-package com.algonquincollege.cst8277.assignment3.model;
+package com.algonquincollege.cst8277.assignment4.model;
 
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Version;
 
 /**
  * Description: Abstract class that is base for all
- * com.algonquincollege.cst8277.assignment3 @Entity classes table.
+ * com.algonquincollege.cst8277.assignment4 @Entity classes table.
  * Author(original): Mike Norman, Course materials (19F) CST 8277
  * 
  * Modified Date: November 2019
