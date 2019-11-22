@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="Assignment4- H2- Banking" time="201911212114">
+	<entities>
+		<data-source id="h2_server-16d1157741e-6cb88b1db3d043dc">
+			<entity id="1" name="ACCOUNT" fq-name="PUBLIC.ACCOUNT">
+				<path name="PUBLIC"/>
+			</entity>
+			<entity id="2" name="ASSET" fq-name="PUBLIC.ASSET">
+				<path name="PUBLIC"/>
+			</entity>
+			<entity id="3" name="PORTFOLIO" fq-name="PUBLIC.PORTFOLIO">
+				<path name="PUBLIC"/>
+			</entity>
+			<entity id="4" name="USER_ACCOUNT" fq-name="PUBLIC.USER_ACCOUNT">
+				<path name="PUBLIC"/>
+			</entity>
+			<entity id="5" name="USER_ACCOUNT_ACCOUNT" fq-name="PUBLIC.USER_ACCOUNT_ACCOUNT">
+				<path name="PUBLIC"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="FK1" fq-name="PUBLIC.USER_ACCOUNT_ACCOUNT.FK1" type="fk" pk-ref="1" fk-ref="5"/>
+		<relation name="ACCNT_PFOLIO_FK" fq-name="PUBLIC.ACCOUNT.ACCNT_PFOLIO_FK" type="fk" pk-ref="3" fk-ref="1"/>
+		<relation name="ASSET_PFOLIO_FK" fq-name="PUBLIC.ASSET.ASSET_PFOLIO_FK" type="fk" pk-ref="3" fk-ref="2"/>
+		<relation name="FK2" fq-name="PUBLIC.USER_ACCOUNT_ACCOUNT.FK2" type="fk" pk-ref="4" fk-ref="5"/>
+	</relations>
+	<notes/>
+</diagram>
