@@ -24,13 +24,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.algonquincollege.cst8277.assignment4.TestSuiteBase;
-import com.algonquincollege.cst8277.assignment4.model.Asset;
-import com.algonquincollege.cst8277.assignment4.model.ChequingAccount;
-import com.algonquincollege.cst8277.assignment4.model.ChequingAccount_;
-import com.algonquincollege.cst8277.assignment4.model.InvestmentAccount;
-import com.algonquincollege.cst8277.assignment4.model.Portfolio;
-import com.algonquincollege.cst8277.assignment4.model.SavingAccount;
-import com.algonquincollege.cst8277.assignment4.model.User;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
@@ -68,7 +61,6 @@ public class BankingTestSuite extends TestSuiteBase {
         chequingAccount.setBalance(1.2);
         chequingAccount.setId(1);
         chequingAccount.setVersion(1);
-        chequingAccount.setPortfolio(null);
         chequingAccount.setUsers(new ArrayList<User>());
         em.getTransaction().begin();
 
@@ -142,7 +134,6 @@ public class BankingTestSuite extends TestSuiteBase {
         savingAccount.setSavingRate(1.2);
         savingAccount.setId(1);
         savingAccount.setVersion(1);
-        savingAccount.setPortfolio(null);
         savingAccount.setUsers(new ArrayList<User>());
 
 //        // JUnit assertions
@@ -309,7 +300,6 @@ public class BankingTestSuite extends TestSuiteBase {
         chequingAccount.setBalance(1.2);
         chequingAccount.setId(1);
         chequingAccount.setVersion(1);
-        chequingAccount.setPortfolio(null);
         chequingAccount.setUsers(new ArrayList<User>());
 
 //        // entity manager
@@ -456,7 +446,6 @@ public class BankingTestSuite extends TestSuiteBase {
         chequingAccount.setBalance(1.2);
         chequingAccount.setId(1);
         chequingAccount.setVersion(1);
-        chequingAccount.setPortfolio(null);
         chequingAccount.setUsers(new ArrayList<User>());
         em.getTransaction().begin();
 
@@ -881,7 +870,6 @@ public class BankingTestSuite extends TestSuiteBase {
         // account
         ChequingAccount a1 = new ChequingAccount();
         a1.setId(1);
-        a1.setPortfolio(portfolio);
         em.persist(a1);
         em.remove(a1);
 
@@ -939,7 +927,6 @@ public class BankingTestSuite extends TestSuiteBase {
         // account
         SavingAccount a1 = new SavingAccount();
         a1.setId(1);
-        a1.setPortfolio(portfolio);
         em.persist(a1);
         em.remove(a1);
 
@@ -1029,7 +1016,6 @@ public class BankingTestSuite extends TestSuiteBase {
         savingAccount.setBalance(1.2);
         savingAccount.setId(1);
         savingAccount.setVersion(1);
-        savingAccount.setPortfolio(null);
         savingAccount.setUsers(new ArrayList<User>());
 
         em.persist(savingAccount);

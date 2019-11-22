@@ -13,7 +13,6 @@ import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
@@ -29,7 +28,6 @@ import javax.persistence.Table;
 @DiscriminatorColumn(name = "ACCOUNT_TYPE", length = 1)
 public abstract class AccountBase extends ModelBase {
     private List<User> users;
-    private Portfolio portfolio;
 
     /**
      * Description: getId
@@ -69,25 +67,4 @@ public abstract class AccountBase extends ModelBase {
         this.users = users;
     }
 
-    /**
-     * Description: get portfolio
-     * 
-     * @return portfolio
-     * @author Vi Pham
-     */
-    @OneToOne
-    @JoinColumn(name = "PORTFOLIO_ID")
-    public Portfolio getPortfolio() {
-        return this.portfolio;
-    }
-
-    /**
-     * Description: set portfolio
-     * 
-     * @param portfolio
-     * @author Vi Pham
-     */
-    public void setPortfolio(Portfolio portfolio) {
-        this.portfolio = portfolio;
-    }
 }
