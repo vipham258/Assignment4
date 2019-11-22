@@ -7,7 +7,12 @@
  */
 package com.algonquincollege.cst8277.assignment4.model;
 
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Version;
 
 /**
@@ -26,6 +31,37 @@ public abstract class ModelBase implements BankEntity {
     protected int id;
     protected double balance;
     protected int version;
+    protected LocalDateTime createDate;
+
+    @Column(name = "created_date")
+    public LocalDateTime getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(LocalDateTime createDate) {
+        this.createDate = createDate;
+    }
+
+    @Column(name = "updated_date")
+    public LocalDateTime getUpdateDate() {
+        return updateDate;
+    }
+
+    @PrePersist
+    public void onPersist() {
+        setCreateDate(LocalDateTime.now());
+    }
+
+    @PreUpdate
+    public void onUpdate() {
+        setUpdateDate(LocalDateTime.now());
+    }
+
+    public void setUpdateDate(LocalDateTime updateDate) {
+        this.updateDate = updateDate;
+    }
+
+    protected LocalDateTime updateDate;
 
     public int getId() {
         return this.id;
@@ -51,4 +87,5 @@ public abstract class ModelBase implements BankEntity {
     public void setVersion(int version) {
         this.version = version;
     }
+
 }
