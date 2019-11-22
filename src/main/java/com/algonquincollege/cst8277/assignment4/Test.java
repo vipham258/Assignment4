@@ -20,12 +20,12 @@ public class Test {
 
     private static final Class<?> _thisClaz = MethodHandles.lookup().lookupClass();
     private static final Logger logger = LoggerFactory.getLogger(_thisClaz);
-    
-    public static final String ASSIGNMENT3_PU_NAME = "Assignment3-main-PU";
+
+    public static final String ASSIGNMENT4_PU_NAME = "Assignment4-main-PU";
 
     public static void main(String[] args) {
         logger.info("setup JPA EntityManagerFactory, create EntityManager (Session)");
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory(ASSIGNMENT3_PU_NAME);
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory(ASSIGNMENT4_PU_NAME);
         EntityManager em = emf.createEntityManager();
         em.close();
         emf.close();

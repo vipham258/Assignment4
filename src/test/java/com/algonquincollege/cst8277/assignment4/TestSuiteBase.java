@@ -34,7 +34,7 @@ public class TestSuiteBase {
 
     private static final Class<?> _thisClaz = MethodHandles.lookup().lookupClass();
     private static final Logger logger = LoggerFactory.getLogger(_thisClaz);
-    public static final String ASSIGNMENT3_PU_NAME = "Assignment3-testing-PU";
+    public static final String ASSIGNMENT4_PU_NAME = "Assignment4-testing-PU";
     public static final String ECLIPSELINK_LOGGING_SQL = "eclipselink.logging.sql";
 
     static EntityManagerFactory buildEntityManagerFactory() {
@@ -47,7 +47,7 @@ public class TestSuiteBase {
          * logging will now work
          */
         AbstractSessionLog.setLog(new DefaultSessionLog());
-        return Persistence.createEntityManagerFactory(ASSIGNMENT3_PU_NAME, properties);
+        return Persistence.createEntityManagerFactory(ASSIGNMENT4_PU_NAME, properties);
     }
 
     public static ListAppender<ILoggingEvent> attachListAppender(ch.qos.logback.classic.Logger theLogger,

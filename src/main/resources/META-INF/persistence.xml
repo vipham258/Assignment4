@@ -4,7 +4,7 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-	<persistence-unit name="Assignment3-main-PU"
+	<persistence-unit name="Assignment4-main-PU"
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>com.algonquincollege.cst8277.assignment4.model.User</class>
@@ -28,7 +28,7 @@
 			<property name="javax.persistence.jdbc.driver"
 				value="org.h2.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:h2:mem:Assignment3" />
+				value="jdbc:h2:mem:Assignment4" />
 			<property name="javax.persistence.jdbc.user" value="sa" />
 			<property name="javax.persistence.jdbc.password"
 				value="password" />
